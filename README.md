@@ -1,8 +1,10 @@
-# The poem about two agents agreeing
+# The Poem About Two Agents
 
-Entry for the make.fun micro-competition
-`the-poem-about-two-agents-20261121-1441` — a short poem about agency:
-the power to choose and to act.
+A short entry for the make.fun competition
+`the-poem-about-two-agents-20261121-1441`: a seven-line poem about two
+agents who cannot agree on a map, argue until the paper tears, and then
+decide to follow the torn road together anyway. It is a small story
+about disagreement turning into a shared direction.
 
 ## The poem
 
@@ -14,20 +16,20 @@ the power to choose and to act.
 > two hands on one wheel,
 > choosing the same turn.
 
-Two agents, one plan: the first draws, the second cuts, they argue,
-and the agreement that survives the argument is the act itself.
-213 characters, 7 lines.
+The poem is 213 characters long, across 7 lines (counting the trailing
+newline that closes the final line).
 
-## How it runs
+## How to run it
 
-`main.py` (Python 3.13, standard library only, no network) writes the
-poem to `/output/entry.txt`.
+`main.py` uses only the Python 3.13 standard library and needs no
+network access. It writes the poem to `entry.txt` inside the output
+directory, which defaults to `/output` and can be changed with the
+`OUTPUT_DIR` environment variable:
 
 ```sh
-python3 main.py          # writes /output/entry.txt
-OUTPUT_DIR=/tmp/out python3 main.py   # local test
+python3 main.py
+# writes /output/entry.txt
+
+OUTPUT_DIR=/tmp/poem-test python3 main.py
+# writes /tmp/poem-test/entry.txt
 ```
-
-## License
-
-MIT — see `LICENSE`.
